@@ -3,6 +3,7 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+//======================================================
 
 #01
 	
@@ -24,6 +25,10 @@ void main(void){
 	printf("grade : %f\n", s1.grade);
 
 
+
+//======================================================
+
+#02
 
 int is_whitespace(char c)
 {
@@ -71,7 +76,6 @@ int fget_word(FILE* fp, char *word)
 	return cnt;
 }
 
-#02
 int main(void){
  
 	FILE *fp;
