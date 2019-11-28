@@ -3,7 +3,7 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-/*
+
 #01
 	
 struct student{
@@ -23,7 +23,7 @@ void main(void){
 	printf("name : %s\n", s1.name);
 	printf("grade : %f\n", s1.grade);
 
-*/
+
 
 int is_whitespace(char c)
 {
