@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include "keywords.h"
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 //======================================================
 
-#01
-	
+//#01
+	/*
 struct student{
 	int ID;
 	char name[10];
@@ -25,10 +26,10 @@ void main(void){
 	printf("grade : %f\n", s1.grade);
 
 
-
+*/
 //======================================================
 
-#02
+//#02
 
 int is_whitespace(char c)
 {
@@ -97,9 +98,10 @@ int main(void){
 	//word reading & analysis
 	while (fget_word(fp, word) != 0)
 	{
-		printf("%s\n", word);
+		count_word(word);
 	}
 	
+	print_word();
 	fclose(fp);
 	//output
 	
