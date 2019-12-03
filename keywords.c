@@ -20,7 +20,7 @@ struct keytab keywrds[13] = {
 	{0,"char"},
 	{0,"do"}
 	
-}
+};
 
 void count_word(char *word)
 {
