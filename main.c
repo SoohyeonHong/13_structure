@@ -10,7 +10,7 @@
 //======================================================
 
 //#01
-	/*
+	
 struct student{
 	int ID;
 	char name[10];
@@ -18,7 +18,7 @@ struct student{
 }; 
 
 void main(void){
-	struct student s1 = {14, "»Ñ¿¨", 4.3};
+	struct student s1 = {14, "ë¿Œì—¥", 4.3};
 	
 	s1.ID = 123456;
 	strcpy(s1.name, "Juyeop");
@@ -29,7 +29,7 @@ void main(void){
 	printf("grade : %f\n", s1.grade);
 
 
-*/
+
 //======================================================
 
 //#02
@@ -42,10 +42,10 @@ int is_whitespace(char c)
 		c == '\t' ||
 		c == '('  )
 	{
-		return 1; //¸Â´Ù 
+		return 1; //ë§ë‹¤ 
 	}
 	
-	return 0; //¾Æ´Ï´Ù 
+	return 0; //ì•„ë‹ˆë‹¤ 
 }
 
 int fget_word(FILE* fp, char *word)
@@ -55,7 +55,7 @@ int fget_word(FILE* fp, char *word)
 	
 	while ((c = fgetc(fp)) != EOF)
 	{
-		if (is_whitespace(c) == 0) //°ø¹é±ÛÀÚÀÎÁö¸¦ º¸´Â °Í 
+		if (is_whitespace(c) == 0) //ê³µë°±ê¸€ìì¸ì§€ë¥¼ ë³´ëŠ” ê²ƒ 
 			break;
 	}
 	if ( c == EOF )
@@ -83,18 +83,18 @@ int fget_word(FILE* fp, char *word)
 int main(void){
  
 	FILE *fp;
-	char filepath[100];		//»ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ ¹®ÀÚ¿­ ÀúÀå 
+	char filepath[100];		//ì‚¬ìš©ìê°€ ì…ë ¥í•œ ë¬¸ìì—´ ì €ì¥ 
 	char word[100];
 	
 	//file open
 	printf("input the file path : ");
-	scanf("%s", filepath, "r"); //scanf·Î ÆÄÀÏ°æ·Î¸¦ ÀÔ·Â¹ŞÀ½ 
+	scanf("%s", filepath, "r"); //scanfë¡œ íŒŒì¼ê²½ë¡œë¥¼ ì…ë ¥ë°›ìŒ 
 	fp = fopen(filepath, "r");
 	
 	if (fp == NULL)
 	{
 		printf("file path is wrong! %s\n", filepath);
-		return -1; //ÇÁ·Î±×·¥ ³¡³»¹ö¸² 
+		return -1; //í”„ë¡œê·¸ë¨ ëë‚´ë²„ë¦¼ 
 	}
 	
 	
